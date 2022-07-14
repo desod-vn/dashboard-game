@@ -12,6 +12,7 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Users from "./pages/Users";
+import Shop from "./pages/Shop";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
 import Main from "./layouts/Main";
@@ -28,6 +29,7 @@ function App() {
         <Main>
           <Route exact path="/dashboard" component={Home} />
           <Route exact path="/users" component={Users} />
+          <Route exact path="/shop" component={Shop} />
           <Redirect from="*" to="/dashboard" />
         </Main>
       </Switch>
